@@ -11,14 +11,41 @@
     *{
         font-family: 'Courier New', Courier, monospace;
     }
+
+    #container-main{
+        display: flex;
+        flex-direction: row;
+        gap: 15px;
+    }
+
+    main{
+        padding: 10px;
+        width: fit-content;
+        display: flex;
+        flex-direction: column;
+        border: solid black 2px;
+        border-radius: 2px;
+    }
+    section{
+        width: fit-content;
+    }
+
+    header{
+        text-align: center;
+        flex: 0;
+        height: fit-content;
+        background-color: crimson;
+        border: solid black 2px;
+    }
+    #container-main-right{
+        display: flex;
+        flex-direction: column;
+    }
 </style>
 <body>
-    <header>
-        <h1>Bem vindo à minha página!</h1>
-        <h3>Estudante de Programação</h3>
-    </header>
-    <img src="img/img (4).png" width="15%">
+    <div id="container-main">
     <main>
+        <img src="img/img (4).png" style="width: 200px;align-self: center;">
         <section>
             <h2>Minhas Abilidades</h2>
             <ul>
@@ -26,6 +53,28 @@
                 <li>HTML e CSS</li>
             </ul>
         </section>
+
+        <section>
+            <h2>Cursos</h2>
+            <ul>
+                <li>Curso de Introdução à Programação</li>
+                <li>Curso de HTML e CSS Básico</li>
+                <li>Curso de Arduino</li>
+            </ul>
+        </section>
     </main>
+<div id="container-main-right">
+    <header>
+        <h1>Bem vindo à minha página!</h1>
+        <h3>Estudante de Programação</h3>
+    </header>
+    <div id="container-content">
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+            Impedit fuga rem iusto nemo corporis doloremque, 
+            labore reiciendis assumenda veniam tempore ducimus nisi beatae quis 
+            quisquam dolorum animi voluptatum modi eum.</p>
+    </div>
+</div>
+</div>
 </body>
 </html>
