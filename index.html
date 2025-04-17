@@ -12,6 +12,11 @@
         font-family: 'Courier New', Courier, monospace;
     }
 
+    body{
+        background-image: url(img/back.jpg);
+        background-size: contain;
+    }
+
     #container-main{
         display: flex;
         flex-direction: row;
@@ -25,9 +30,11 @@
         flex-direction: column;
         border: solid black 2px;
         border-radius: 2px;
+        background-color: white;
     }
     section{
         width: fit-content;
+        background-color: white;
     }
 
     header{
@@ -36,10 +43,22 @@
         height: fit-content;
         background-color: crimson;
         border: solid black 2px;
+        background-color: white;
     }
     #container-main-right{
         display: flex;
         flex-direction: column;
+    }
+    #container-content{
+        border: solid black 2px;
+        margin-top: 10px;
+        padding: 10px;
+        background-color: white;
+    }
+
+    .container-content-text{
+        display: flex;
+        flex-direction: row;
     }
 </style>
 <body>
@@ -47,7 +66,7 @@
     <main>
         <img src="img/img (4).png" style="width: 200px;align-self: center;">
         <section>
-            <h2>Minhas Abilidades</h2>
+            <h2>Minhas Habilidades</h2>
             <ul>
                 <li>Lógica de Programação</li>
                 <li>HTML e CSS</li>
@@ -69,10 +88,39 @@
         <h3>Estudante de Programação</h3>
     </header>
     <div id="container-content">
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+        <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
             Impedit fuga rem iusto nemo corporis doloremque, 
             labore reiciendis assumenda veniam tempore ducimus nisi beatae quis 
-            quisquam dolorum animi voluptatum modi eum.</p>
+            quisquam dolorum animi voluptatum modi eum.
+        </p>
+        <div class="container-content-text">
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Velit itaque cumque dignissimos. Quia ad recusandae quaerat voluptatibus, 
+            veritatis odio quasi! Voluptas mollitia porro distinctio magnam molestiae ab necessitatibus iusto ut.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Consectetur voluptatibus odit tempora mollitia eveniet, id sequi facere, 
+            alias dignissimos a nihil, blanditiis ullam veritatis. Facilis necessitatibus ad quis libero commodi!
+        </p>
+        <img src="img/embalagem-e-computador-retro-vhs_23-2149854370-removebg-preview.png" width="20%">
+        </div>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+            Saepe reiciendis eius omnis, temporibus, 
+            unde impedit cupiditate itaque dicta iste nobis rerum ullam officiis, 
+            numquam enim molestiae hic beatae pariatur tenetur!</p>
+        <div class="container-content-text">
+            <img src="img/img (6).png" width="20%">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                Laborum quae, nihil ut ex nisi modi. Dolor natus rerum, 
+                soluta deserunt officia incidunt repellendus porro nobis quia, 
+                iste distinctio eveniet voluptatibus?
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                Voluptatum, perferendis eos odit eum quasi explicabo eligendi, 
+                asperiores expedita est aut, 
+                provident inventore atque suscipit pariatur placeat cupiditate magnam dicta ut?
+            </p>
+        </div>
     </div>
 </div>
 </div>
